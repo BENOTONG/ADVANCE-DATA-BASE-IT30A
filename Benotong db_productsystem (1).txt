@@ -1,0 +1,54 @@
+===Database db_productsystem
+
+== Table structure for table tbl_customer
+
+|------
+|Column|Type|Null|Default
+|------
+|//**customer_id**//|int(11)|No|
+|customer_name|varchar(255)|Yes|NULL
+|contact_info|varchar(255)|Yes|NULL
+== Dumping data for table tbl_customer
+
+== Table structure for table tbl_orders
+
+|------
+|Column|Type|Null|Default
+|------
+|//**order_id**//|int(11)|No|
+|customer_id|int(11)|No|
+|order_date|date|Yes|NULL
+|total_amount|decimal(10,2)|Yes|NULL
+== Dumping data for table tbl_orders
+
+== Table structure for table tbl_order_items
+
+|------
+|Column|Type|Null|Default
+|------
+|//**order_item_id**//|int(11)|No|
+|order_id|int(11)|No|
+|product_id|int(11)|No|
+== Dumping data for table tbl_order_items
+
+== Table structure for table tbl_products
+
+|------
+|Column|Type|Null|Default
+|------
+|//**product_id**//|int(11)|No|
+|product_name|varchar(255)|No|
+|product_description|int(11)|No|
+|price|decimal(10,0)|No|
+== Dumping data for table tbl_products
+
+== Table structure for table tbl_sales
+
+|------
+|Column|Type|Null|Default
+|------
+|purchase_number|int(10)|Yes|NULL
+|date_of_purchase|date|Yes|NULL
+|//**customer_id**//|int(10)|No|
+== Dumping data for table tbl_sales
+
